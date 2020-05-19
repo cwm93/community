@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-7-30 4:41:25 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.communication.entity.GTelecomValueAddedBatch" table="g_telecom_value_added_batch" dynamic-insert="true" dynamic-update="true">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="native" />
+        </id>
+        <property name="year" type="java.lang.Integer">
+            <column name="YEAR" />
+        </property>
+        <property name="month" type="java.lang.Integer">
+            <column name="MONTH" />
+        </property>
+        <set name="telecomValueAddedList" table="g_telecom_value_added" inverse="false" lazy="true">
+            <key>
+                <column name="BATCH" not-null="true"/>
+            </key>
+            <one-to-many class="com.communication.entity.GTelecomValueAdded"></one-to-many>
+        </set>
+        <property name="uid" type="java.lang.Long">
+            <column name="UID" />
+        </property>
+        <property name="insertTime" type="java.util.Date">
+            <column name="INSERTTIME" />
+        </property>
+    </class>
+</hibernate-mapping>

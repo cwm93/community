@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-3-5 18:40:43 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.communication.entity.FWlwhd" table="zf_fwlwhd" dynamic-insert="true" dynamic-update="true">
+        <id name="id" type="long">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="reportLogId" type="long">
+            <column name="report_log_id" />
+        </property>
+        <property name="insertUserId" type="long">
+            <column name="insert_user_id" />
+        </property>
+        <property name="telecomOperatorId" type="long">
+            <column name="telecom_operator_id" />
+        </property>
+        <property name="hd" type="java.lang.String">
+            <column name="hd" />
+        </property>
+        <property name="ws" type="java.lang.String">
+            <column name="ws" />
+        </property>
+        <property name="hdmx" type="java.lang.String">
+            <column name="hdmx" />
+        </property>
+        <property name="ysmdjs" type="int">
+            <column name="ysmdjs" />
+        </property>
+        <property name="wsmdjs" type="int">
+            <column name="wsmdjs" />
+        </property>
+        <property name="wsys" type="int">
+            <column name="wsys" />
+        </property>
+        <property name="userName" type="java.lang.String">
+            <column name="username" />
+        </property>
+        <property name="company" type="java.lang.String">
+            <column name="company" />
+        </property>
+        <property name="mobile" type="java.lang.String">
+            <column name="mobile" />
+        </property>
+        <property name="email" type="java.lang.String">
+            <column name="email" />
+        </property>
+        <property name="insertTime" type="java.util.Date">
+            <column name="insert_time" />
+        </property>
+        <property name="updateTime" type="java.util.Date">
+            <column name="update_time" />
+        </property>
+    </class>
+</hibernate-mapping>

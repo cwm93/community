@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-11-5 20:09:30 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.communication.entity.SmsLogEntity" table="sys_sms_log" dynamic-insert="true" dynamic-update="true">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="content" type="java.lang.String">
+            <column name="content" length="1000"/>
+        </property>
+        <property name="status" type="java.lang.String">
+            <column name="status" default="0" length="2"/>
+        </property>
+        <property name="pieces" type="java.lang.Integer">
+            <column name="pieces" default="0"/>
+        </property>
+        <property name="insertTime" type="java.util.Date">
+            <column name="insert_time" />
+        </property>
+    </class>
+</hibernate-mapping>

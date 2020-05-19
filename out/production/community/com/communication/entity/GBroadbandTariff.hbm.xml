@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-6-8 15:49:29 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.communication.entity.GBroadbandTariff" table="g_broadband_tariff" dynamic-insert="true" dynamic-update="true">
+        <id name="id" type="java.lang.Long">
+            <column name="ID" />
+            <generator class="native" />
+        </id>
+        <property name="field_11" type="java.lang.Float">
+            <column name="FIELD_11" />
+        </property>
+        <property name="field_12" type="java.lang.Float">
+            <column name="FIELD_12" />
+        </property>
+        <property name="field_13" type="java.lang.Float">
+            <column name="FIELD_13" />
+        </property>
+        <property name="field_21" type="java.lang.Float">
+            <column name="FIELD_21" />
+        </property>
+        <property name="field_22" type="java.lang.Float">
+            <column name="FIELD_22" />
+        </property>
+        <property name="field_23" type="java.lang.Float">
+            <column name="FIELD_23" />
+        </property>
+        <property name="field_31" type="java.lang.Float">
+            <column name="FIELD_31" />
+        </property>
+        <property name="field_32" type="java.lang.Float">
+            <column name="FIELD_32" />
+        </property>
+        <property name="field_33" type="java.lang.Float">
+            <column name="FIELD_33" />
+        </property>
+        <property name="field_41" type="java.lang.Float">
+            <column name="FIELD_41" />
+        </property>
+        <property name="field_42" type="java.lang.Float">
+            <column name="FIELD_42" />
+        </property>
+        <property name="field_43" type="java.lang.Float">
+            <column name="FIELD_43" />
+        </property>
+        <property name="field_51" type="java.lang.Float">
+            <column name="FIELD_51" />
+        </property>
+        <property name="field_52" type="java.lang.Float">
+            <column name="FIELD_52" />
+        </property>
+        <property name="field_53" type="java.lang.Float">
+            <column name="FIELD_53" />
+        </property>
+        <property name="year" type="java.lang.Integer">
+            <column name="YEAR" />
+        </property>
+        <property name="month" type="java.lang.Integer">
+            <column name="MONTH" />
+        </property>
+        <property name="createUserId" type="java.lang.Long">
+            <column name="CREATEUSERID" />
+        </property>
+        <property name="insertTime" type="java.util.Date">
+            <column name="INSERTTIME" />
+        </property>
+        <property name="updateTime" type="java.util.Date">
+            <column name="UPDATETIME" />
+        </property>
+    </class>
+</hibernate-mapping>

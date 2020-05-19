@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-5-3 10:18:53 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.communication.entity.ReportRemark" table="t_report_remark" dynamic-insert="true" dynamic-update="true">
+        <id name="id" type="long">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <many-to-one name="report" class="com.communication.entity.Report">
+            <column name="report_id" />
+        </many-to-one>
+        <property name="year" type="java.lang.String">
+            <column name="year" />
+        </property>
+        <property name="month" type="java.lang.String">
+            <column name="month" />
+        </property>
+        <property name="week" type="java.lang.String">
+            <column name="week" />
+        </property>
+        <property name="remarkContent" type="java.lang.String">
+            <column name="remark_content" />
+        </property>
+        <property name="userId" type="long">
+            <column name="user_id" />
+        </property>
+        <property name="userName" type="java.lang.String">
+            <column name="username" />
+        </property>
+        <property name="insertTime" type="java.util.Date">
+            <column name="insert_time" />
+        </property>
+        <property name="updateTime" type="java.util.Date">
+            <column name="update_time" />
+        </property>
+    </class>
+</hibernate-mapping>

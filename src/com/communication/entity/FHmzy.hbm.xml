@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-2-20 13:18:40 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.communication.entity.FHmzy" table="zf_hmzy" dynamic-insert="true" dynamic-update="true">
+        <id name="id" type="long">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="reportLogId" type="long">
+            <column name="report_log_id" />
+        </property>
+        <property name="code" type="java.lang.String" length="30">
+            <column name="code" />
+        </property>
+        <property name="zoneCode" type="java.lang.String">
+            <column name="zone_code" />
+        </property>
+        <property name="logicUsegeNumber" type="int">
+            <column name="logic_useger_number" />
+        </property>
+        <property name="physicsAssignedNumber" type="int">
+            <column name="physics_assigned_number" />
+        </property>
+        <property name="occupiedNumber" type="int">
+            <column name="occupied_number" />
+        </property>
+         <property name="isPHS" type="java.lang.String">
+            <column name="is_phs" />
+        </property>
+        <property name="insertUserId" type="long">
+            <column name="insert_user_id" />
+        </property>
+        <property name="telecomOperatorId" type="long">
+            <column name="telecom_operator_id" />
+        </property>
+        <property name="userName" type="java.lang.String" length="20">
+            <column name="username" />
+        </property>
+        <property name="company" type="java.lang.String" length="50">
+            <column name="company" />
+        </property>
+        <property name="mobile" type="java.lang.String" length="15">
+            <column name="mobile" />
+        </property>
+        <property name="email" type="java.lang.String" length="30">
+            <column name="email" />
+        </property>
+        <property name="insertTime" type="java.util.Date">
+            <column name="insert_time" />
+        </property>
+        <property name="updateTime" type="java.util.Date">
+            <column name="update_time" />
+        </property>
+    </class>
+</hibernate-mapping>

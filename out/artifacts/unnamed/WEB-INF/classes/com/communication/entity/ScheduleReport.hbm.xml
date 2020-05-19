@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-1-17 15:52:34 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.communication.entity.ScheduleReport" table="t_schedule_report" lazy="false" dynamic-insert="true" dynamic-update="true">
+        <id name="id" type="long">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="name" />
+        </property>
+        <property name="code" type="java.lang.String">
+            <column name="code" />
+        </property>
+        <many-to-one name="report" class="com.communication.entity.Report">
+            <column name="report" />
+        </many-to-one>
+        <set name="sendedUsers" table="t_schedule_report_user" inverse="false" cascade="save-update" lazy="false">
+            <key>
+                <column name="schedule_report_id" />
+            </key>
+            <many-to-many column="user_id" class="com.communication.entity.User"/>
+        </set>
+        <property name="createdUserId" type="long">
+            <column name="created_user_id" />
+        </property>
+        <property name="type" type="java.lang.String">
+            <column name="type" />
+        </property>
+        <property name="sendDate" type="java.util.Date">
+            <column name="send_date" />
+        </property>
+        <property name="sendWeek" type="java.lang.String">
+            <column name="send_week" />
+        </property>
+        <property name="sendDay" type="java.lang.String">
+            <column name="send_day" />
+        </property>
+        <property name="sendTime" type="java.lang.String">
+            <column name="send_time" />
+        </property>
+        <property name="startTime" type="java.util.Date">
+            <column name="start_time" />
+        </property>
+        <property name="endTime" type="java.util.Date">
+            <column name="end_time" />
+        </property>
+         <property name="cronExpression" type="java.lang.String">
+            <column name="cron_expression" />
+        </property>
+        <property name="description" type="java.lang.String">
+            <column name="description" />
+        </property>
+        <property name="status" type="java.lang.String">
+            <column name="status" />
+        </property>
+        <property name="updateTime" type="java.util.Date">
+            <column name="update_time" />
+        </property>
+        <property name="createdTime" type="java.util.Date">
+            <column name="created_time" />
+        </property>
+    </class>
+</hibernate-mapping>

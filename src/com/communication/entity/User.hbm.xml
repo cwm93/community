@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-1-2 8:13:05 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+	<class name="com.communication.entity.User" table="t_user" dynamic-insert="true" dynamic-update="true">
+		<id name="id" type="long">
+			<column name="id" />
+			<generator class="native" />
+		</id>
+		<property name="username" type="java.lang.String">
+			<column name="username" />
+		</property>
+		<property name="password" type="java.lang.String">
+			<column name="password" />
+		</property>
+		<many-to-one name="telecomOperator"
+			class="com.communication.entity.TelecomOperator" unique="true" fetch="join">
+			<column name="telecom_operator_id" />
+		</many-to-one>
+		<many-to-one name="companyAttribute"
+			class="com.communication.entity.CompanyAttribute" unique="true" fetch="join">
+			<column name="company_attribute_id" />
+		</many-to-one>
+		<property name="company" type="java.lang.String">
+			<column name="company" />
+		</property>
+		<property name="position" type="java.lang.String">
+			<column name="position" />
+		</property>
+		<property name="realname" type="java.lang.String">
+			<column name="realname" />
+		</property>
+		<property name="mobile" type="java.lang.String">
+			<column name="mobile" />
+		</property>
+		<property name="email" type="java.lang.String">
+			<column name="email" />
+		</property>
+		<property name="idCardNumber" type="java.lang.String" access="field">
+			<column name="id_card_number" />
+		</property>
+		<property name="address" type="java.lang.String">
+			<column name="address" />
+		</property>
+		<property name="telephone" type="java.lang.String" access="field">
+			<column name="telephone" />
+		</property>
+		<many-to-one name="role" class="com.communication.entity.Role"
+			unique="true" fetch="join">
+			<column name="role_id" />
+		</many-to-one>
+		<property name="createdTime" type="java.util.Date">
+			<column name="created_time" />
+		</property>
+		<property name="lastLoginTime" type="java.util.Date">
+			<column name="last_login_time" />
+		</property>
+		<property name="lastLoginIp" type="java.lang.String">
+			<column name="last_login_ip" />
+		</property>
+		<property name="status" type="java.lang.String">
+			<column name="status" />
+		</property>
+		<set name="assignedUsers" table="t_assigned_user" cascade="save-update" order-by="child_user_id asc">
+			<key>
+				<column name="user_id" not-null="true"></column>
+			</key>
+			<many-to-many column="child_user_id" class="com.communication.entity.User"></many-to-many>
+		</set>
+		<set name="assignedReports" table="t_assigned_report" cascade="save-update" order-by="report_id asc">
+			<key>
+				<column name="user_id" not-null="true" ></column>
+			</key>
+			<many-to-many column="report_id" class="com.communication.entity.Report"></many-to-many>
+		</set>
+		<set name="assignedAdministrationReports" table="t_assigned_administration_report" cascade="save-update" order-by="administration_report_id asc">
+			<key>
+				<column name="user_id" not-null="true" ></column>
+			</key>
+			<many-to-many column="administration_report_id" class="com.communication.entity.AdministrationReport"></many-to-many>
+		</set>
+		<property name="smscode" type="java.lang.String">
+			<column name="smscode" length="15"/>
+		</property>
+		<property name="sendCodeTime" type="java.lang.Long">
+			<column name="send_code_time" default="0"/>
+		</property>
+		<property name="codeExpire" type="java.lang.Long">
+			<column name="code_expire" default="0"/>
+		</property>
+	</class>
+</hibernate-mapping>

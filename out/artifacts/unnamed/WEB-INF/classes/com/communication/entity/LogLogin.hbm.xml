@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-3-4 11:25:15 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.communication.entity.LogLogin" table="t_log_login" dynamic-insert="true" dynamic-update="true">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="userId" type="java.lang.Long">
+            <column name="user_id" />
+        </property>
+        <property name="ip" type="java.lang.String" length="20">
+            <column name="ip" />
+        </property>
+        <property name="result" type="java.lang.Integer">
+            <column name="result" />
+        </property>
+        <property name="message" type="java.lang.String">
+            <column name="message" />
+        </property>
+        <property name="createTime" type="java.util.Date">
+            <column name="create_time" />
+        </property>
+    </class>
+</hibernate-mapping>

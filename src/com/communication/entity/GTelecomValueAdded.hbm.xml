@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-6-19 14:43:09 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.communication.entity.GTelecomValueAdded" table="g_telecom_value_added" dynamic-insert="true" dynamic-update="true">
+        <id name="id" type="java.lang.Long">
+            <column name="ID" />
+            <generator class="native" />
+        </id>
+        <property name="code" type="java.lang.String">
+            <column name="CODE" />
+        </property>
+        <property name="companyName" type="java.lang.String">
+            <column name="COMPANYNAME" />
+        </property>
+        <property name="businessCategory" type="java.lang.String">
+            <column name="BUSINESSCATEGORY" />
+        </property>
+        <property name="businessCoverage" type="java.lang.String">
+            <column name="BUSINESSCOVERAGE" />
+        </property>
+        <property name="serviceItems" type="java.lang.String">
+            <column name="SERVICEITEMS" />
+        </property>
+        <property name="approvalDate" type="java.lang.String">
+            <column name="APPROVALDATE" />
+        </property>
+        <property name="licenseValidity" type="java.lang.String">
+            <column name="LICENSEVALIDITY" />
+        </property>
+        <property name="enterpriseNature" type="java.lang.String">
+            <column name="ENTERPRISENATURE" />
+        </property>
+        <property name="registeredCapital" type="java.lang.String">
+            <column name="REGISTEREDCAPITAL" />
+        </property>
+        <property name="listedCompany" type="java.lang.String">
+            <column name="LISTEDCOMPANY" />
+        </property>
+        <many-to-one name="batch" class="com.communication.entity.GTelecomValueAddedBatch" fetch="join">
+            <column name="BATCH" />
+        </many-to-one>
+        <property name="userId" type="java.lang.Long">
+            <column name="USERID" />
+        </property>
+        <property name="insertTime" type="java.util.Date">
+            <column name="INSERTTIME" />
+        </property>
+        <property name="updateTime" type="java.util.Date">
+            <column name="UPDATETIME" />
+        </property>
+    </class>
+</hibernate-mapping>

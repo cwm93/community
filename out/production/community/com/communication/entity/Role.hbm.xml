@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-1-4 15:04:09 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.communication.entity.Role" table="t_role" dynamic-insert="true" dynamic-update="true">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="name" />
+        </property>
+         <property name="code" type="java.lang.String">
+            <column name="code" />
+        </property>
+        <property name="comment" type="java.lang.String">
+            <column name="comment" />
+        </property>
+    </class>
+</hibernate-mapping>

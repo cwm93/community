@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-6-23 14:49:16 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.communication.entity.GCheckedStore" table="g_checked_store">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="field_01" type="java.lang.Integer">
+            <column name="field_01" />
+        </property>
+        <property name="field_04" type="java.lang.Integer">
+            <column name="field_04" />
+        </property>
+        <property name="field_05" type="java.lang.Float">
+            <column name="field_05" />
+        </property>
+        <property name="field_06" type="java.lang.Integer">
+            <column name="field_06" />
+        </property>
+        <property name="field_02" type="java.lang.Integer">
+            <column name="field_02" />
+        </property>
+        <property name="field_07" type="java.lang.Float">
+            <column name="field_07" />
+        </property>
+        <property name="field_08" type="java.lang.Integer">
+            <column name="field_08" />
+        </property>
+        <property name="field_03" type="java.lang.Integer">
+            <column name="field_03" />
+        </property>
+        <property name="field_09" type="java.lang.Float">
+            <column name="field_09" />
+        </property>
+        <property name="year" type="java.lang.Integer">
+            <column name="year" />
+        </property>
+        <property name="month" type="java.lang.Integer">
+            <column name="month" />
+        </property>
+        <property name="createdUserId" type="java.lang.Long">
+            <column name="created_user_id" />
+        </property>
+        <property name="insertTime" type="java.util.Date">
+            <column name="insert_time" />
+        </property>
+        <property name="updateTime" type="java.util.Date">
+            <column name="update_time" />
+        </property>
+    </class>
+</hibernate-mapping>

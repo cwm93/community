@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-11-5 20:02:34 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.communication.entity.SmsEntity" table="sys_sms" dynamic-insert="true" dynamic-update="true">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="type" type="java.lang.String">
+            <column name="type" default="0" length="1"/>
+        </property>
+        <property name="closed" type="java.lang.String">
+            <column name="closed" default="0" length="1"/>
+        </property>
+        <property name="comment" type="java.lang.String">
+            <column name="comment" default="0" length="500"/>
+        </property>
+    </class>
+</hibernate-mapping>

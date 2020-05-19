@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-3-10 22:04:26 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.communication.entity.FResaleRealNameRegistration" table="zf_resale_realname_registration" dynamic-insert="true" dynamic-update="true">
+        <id name="id" type="long">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="reportLogId" type="long">
+            <column name="report_log_id" />
+        </property>
+        <property name="insertUserId" type="long">
+            <column name="insert_user_id" />
+        </property>
+        <property name="telecomOperatorId" type="long">
+            <column name="telecom_operator_id" />
+        </property>
+        <property name="field_01" type="java.lang.String" length="50">
+            <column name="field_01" />
+        </property>
+        <property name="field_02" type="java.lang.String" length="50">
+            <column name="field_02" />
+        </property>
+        <property name="field_03" type="java.lang.String" length="50">
+            <column name="field_03" />
+        </property>
+        <property name="field_04" type="java.lang.String" length="50">
+            <column name="field_04" />
+        </property>
+        <property name="field_05" type="java.lang.String" length="50">
+            <column name="field_05" />
+        </property>
+        <property name="field_06" type="java.lang.String" length="50">
+            <column name="field_06" />
+        </property>
+        <property name="field_07" type="java.lang.String" length="50">
+            <column name="field_07" />
+        </property>
+        <property name="field_08" type="java.lang.String" length="50">
+            <column name="field_08" />
+        </property>
+        <property name="field_09" type="java.lang.String" length="50">
+            <column name="field_09" />
+        </property>
+        <property name="field_10" type="java.lang.String" length="50">
+            <column name="field_10" />
+        </property>
+        <property name="field_11" type="java.lang.String" length="21">
+            <column name="field_11" />
+        </property>
+        <property name="field_12" type="java.lang.String" length="21">
+            <column name="field_12" />
+        </property>
+        <property name="field_13" type="java.lang.String" length="21">
+            <column name="field_13" />
+        </property>
+        <property name="field_14" type="java.lang.String" length="21">
+            <column name="field_14" />
+        </property>
+        <property name="field_15" type="java.lang.String" length="21">
+            <column name="field_15" />
+        </property>
+        <property name="field_16" type="java.lang.String" length="21">
+            <column name="field_16" />
+        </property>
+        <property name="field_17" type="java.lang.String" length="21">
+            <column name="field_17" />
+        </property>
+        <property name="field_18" type="java.lang.String" length="21">
+            <column name="field_18" />
+        </property>
+        <property name="field_19" type="java.lang.String" length="21">
+            <column name="field_19" />
+        </property>
+        <property name="field_20" type="java.lang.String" length="21">
+            <column name="field_20" />
+        </property>
+        <property name="field_21" type="java.lang.String" length="21">
+            <column name="field_21" />
+        </property>
+        <property name="field_22" type="java.lang.String" length="21">
+            <column name="field_22" />
+        </property>
+        <property name="field_23" type="java.lang.String" length="21">
+            <column name="field_23" />
+        </property>
+        <property name="field_24" type="java.lang.String" length="21">
+            <column name="field_24" />
+        </property>
+        <property name="field_25" type="java.lang.String" length="21">
+            <column name="field_25" />
+        </property>
+        <property name="field_26" type="java.lang.String" length="21">
+            <column name="field_26" />
+        </property>
+        <property name="field_27" type="java.lang.String" length="21">
+            <column name="field_27" />
+        </property>
+        <property name="field_28" type="java.lang.String" length="21">
+            <column name="field_28" />
+        </property>
+        <property name="field_29" type="java.lang.String" length="21">
+            <column name="field_29" />
+        </property>
+        <property name="field_30" type="java.lang.String" length="21">
+            <column name="field_30" />
+        </property>
+        <property name="userName" type="java.lang.String" length="50">
+            <column name="user_name" />
+        </property>
+        <property name="company" type="java.lang.String" length="50">
+            <column name="company" />
+        </property>
+        <property name="mobile" type="java.lang.String" length="15">
+            <column name="mobile" />
+        </property>
+        <property name="email" type="java.lang.String" length="30">
+            <column name="email" />
+        </property>
+        <property name="createTime" type="java.util.Date">
+            <column name="create_time" />
+        </property>
+        <property name="updateTime" type="java.util.Date">
+            <column name="update_time" />
+        </property>
+    </class>
+</hibernate-mapping>

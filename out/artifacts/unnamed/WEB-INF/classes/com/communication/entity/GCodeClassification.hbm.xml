@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-5-14 10:25:17 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.communication.entity.GCodeClassification" table="g_code_classification">
+        <id name="id" type="long">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <many-to-one name="batch" column="batch" 
+            class="com.communication.entity.GCodeClassificationBatch">  
+        </many-to-one> 
+        <property name="codeNumber" type="java.lang.String">
+            <column name="code_number" />
+        </property>
+        <property name="classification" type="java.lang.String">
+            <column name="classification" />
+        </property>
+        <property name="startTime" type="java.lang.String">
+            <column name="start_time" />
+        </property>
+        <property name="usedCompany" type="java.lang.String">
+            <column name="used_company" />
+        </property>
+        <property name="auditedTime" type="java.lang.String">
+            <column name="audited_time" />
+        </property>
+        <property name="endTime" type="java.lang.String">
+            <column name="end_time" />
+        </property>
+        <property name="type" type="java.lang.String">
+            <column name="type" />
+        </property>
+        <property name="insertTime" type="java.util.Date">
+            <column name="insert_time" />
+        </property>
+        <property name="updateTime" type="java.util.Date">
+            <column name="update_time" />
+        </property>
+    </class>
+</hibernate-mapping>

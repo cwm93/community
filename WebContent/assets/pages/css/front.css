@@ -1,0 +1,11 @@
+@CHARSET "UTF-8";
+.container{max-width:780px;margin-top:50px;border:1px solid #f0f0f0;padding:20px;}
+.title{font-size:16px;text-align:center;}
+.form-title{font-size:14px;text-align:center;border-bottom:1px solid #f0f0f0;padding:8px 0;}
+.file {position: relative;display: inline-block;width:100%;border: 1px solid #99D3F5;border-radius: 4px;padding: 15px 12px;overflow: hidden;color: #1E88C7; text-decoration: none; text-align: center;line-height: 40px;cursor:pointer;}
+.file input {position: absolute;font-size: 100px;right: 0;top: 0;opacity: 0;cursor:pointer;}
+.file:hover {border-color: #78C3F3;color: #004974;text-decoration: none;cursor:pointer;}
+
+.year-month{padding:5px 15px 5px 15px;}
+.year-month >select{width:150px;height:28px;}
+.year-month >span{padding:0 5px;}

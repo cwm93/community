@@ -1,0 +1,21 @@
+/* here you can put your own css to customize and override the theme */
+*{padding:0;margin:0;}
+body{font-family: "Arial","Microsoft YaHei",sans-serif;font-size:14px;}
+
+.page-logo >a{color:#FFF;text-decoration:none;font-size:14px;}
+.page-logo >a>span{color:red;font-size:12px;}
+
+.margin-top-15{margin-top:15px;}
+.margin-left-15{margin-left:15px}
+.chinese-page-title{font-size:16px;color:#333;font-weight:bold;}
+.table-top-tools{list-style:none;margin:0;padding:0;}
+.table-top-tools li{float:left;line-height:32px;}
+.table-top-tools li >span{color:#555;padding:0 8px;}
+.table-top-tools li a{color:#333;font-size:12px;font-weight:bold;text-decoration:none;}
+.table-top-tools li a:active{color:#337ab7;}
+.table-top-tools li.active a{color:#337ab7;}
+
+.table td {padding:3px;font-size:12px;}
+.table td h5{font-weight:bold;font-size:12px;}
+.table > tbody > tr > td{vertical-align:middle;}
+.table > thead > tr > td{vertical-align:middle;}
